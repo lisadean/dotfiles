@@ -1,0 +1,7 @@
+[user]
+	name = Lisa Dean
+	email = lisa@lisadean.net
+[color]
+	ui = auto
+[core]
+	excludesfile = /Users/lisadean/.gitignore_global
