@@ -12,19 +12,21 @@ alias ssh1and1='~/Dropbox/scripts/ssh1and1.sh'
 alias codea='code ~/.aliases'
 alias sourcea='source ~/.aliases'
 
-alias dc="cd ~/Dropbox/DigitalCrafts-11-2017"
-alias dcp="cd ~/Dropbox/DigitalCrafts-11-2017/python"
-alias dch="cd ~/Dropbox/DigitalCrafts-11-2017/html_css"
-alias dcj="cd ~/Dropbox/DigitalCrafts-11-2017/javascript"
-alias dcb="cd ~/Dropbox/DigitalCrafts-11-2017/backend"
 alias xscr="cd ~/Dropbox/scripts"
 
 alias dcr="cd  ~/git-repos/DigitalCrafts"
+alias repos="cd ~/git-repos/"
+
+alias gbl="git branch --list"
+alias glo="git log --oneline"
+alias gs="git status"
+alias gl="git log"
+alias gc="git checkout"
 
 alias sshaws='ssh -i ~/.ssh/stuff-and-things.pem ubuntu@ec2-18-217-173-253.us-east-2.compute.amazonaws.com'
 alias sshaws2='ssh -i ~/.ssh/stuff-and-things.pem ubuntu@ec2-18-220-226-134.us-east-2.compute.amazonaws.com'
+alias sshdo='ssh -i ~/.ssh/id_rsa ubuntu@104.248.123.6'
 
-alias sshreact='ssh -i ~/.ssh/id_rsa ubuntu@104.248.123.6'
 alias python='python3'
 alias pip='pip3'
 
