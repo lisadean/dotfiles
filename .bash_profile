@@ -1,6 +1,9 @@
+export DOTFILES_DIR="~/dotfiles"
+export PATH="$DOTFILES_DIR/scripts:$PATH"
+export PATH="/Users/lisadean/Dropbox/scripts:$PATH"
 
 # added by Anaconda3 5.1.0 installer
-export PATH="/Users/lisadean/anaconda3/bin:/Users/lisadean/Dropbox/scripts:$PATH"
+export PATH="/Users/lisadean/anaconda3/bin:$PATH"
 
 # rbenv -- Ruby version manager
 export RBENV_ROOT=/usr/local/var/rbenv
