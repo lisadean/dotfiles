@@ -14,6 +14,8 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 
 export PATH="~/Library/Android/sdk/platform-tools:~/Library/Android/sdk/emulator:$PATH"
 
+export PATH="/Users/lisadean/Library/Python/3.7/bin:$PATH"
+
 # Import aliases
 source ~/.aliases
 
