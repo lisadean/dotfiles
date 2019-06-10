@@ -1,4 +1,4 @@
-DOTFILES_DIR=~/dotfiles
+DOTFILES_DIR=~/dotfiles-supply
 
 ln -svf "${DOTFILES_DIR}/.bash_profile" ~
 ln -svf "${DOTFILES_DIR}/.aliases" ~

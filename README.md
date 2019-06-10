@@ -1,4 +1,4 @@
-# dotfiles
+# dotfiles-supply
 
 Inspiration (among others):  
 https://github.com/holman/dotfiles  

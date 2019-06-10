@@ -4,32 +4,15 @@ alias lat='ls -lat'
 
 alias fucking='sudo'
 
-alias mkp='~/Dropbox/scripts/make-project.sh'
-alias mknp='~/Dropbox/scripts/make-node-project.sh'
-alias mvd='~/Dropbox/scripts/mvd.sh'
-alias push1and1='~/Dropbox/scripts/push1and1.sh'
-alias ssh1and1='~/Dropbox/scripts/ssh1and1.sh'
-alias codea='code ~/.aliases'
-alias sourcea='source ~/.aliases'
-
-alias xscr="cd ~/Dropbox/scripts"
-
-alias dcr="cd  ~/git-repos/DigitalCrafts"
-alias repos="cd ~/git-repos/"
-
 alias gbl="git branch --list"
 alias glo="git log --oneline"
 alias gs="git status"
 alias gl="git log"
 alias gc="git checkout"
 
-alias sshaws='ssh -i ~/.ssh/stuff-and-things.pem ubuntu@ec2-18-217-173-253.us-east-2.compute.amazonaws.com'
-alias sshaws2='ssh -i ~/.ssh/stuff-and-things.pem ubuntu@ec2-18-220-226-134.us-east-2.compute.amazonaws.com'
-alias sshdo='ssh -i ~/.ssh/id_rsa ubuntu@104.248.123.6'
+# alias python='python3'
+# alias pip='pip3'
 
-alias python='python3'
-alias pip='pip3'
-
-alias server='python -m http.server 8080'
+# alias server='python -m http.server 8080'
 
 alias simulator='open -a Simulator.app'
