@@ -16,3 +16,4 @@ alias gc="git checkout"
 # alias server='python -m http.server 8080'
 
 alias simulator='open -a Simulator.app'
+alias startios='react-native run-ios --simulator="iPhone 8 Plus"'
