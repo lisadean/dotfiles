@@ -1,15 +1,13 @@
-export DOTFILES_DIR="~/dotfiles"
+export DOTFILES_DIR="~/dotfiles-supply"
 export PATH="$DOTFILES_DIR/scripts:$PATH"
 
-export PATH="/Users/lisadean/Dropbox/scripts:$PATH"
+# # added by Anaconda3 5.1.0 installer
+# export PATH="/Users/lisadean/anaconda3/bin:$PATH"
 
-# added by Anaconda3 5.1.0 installer
-export PATH="/Users/lisadean/anaconda3/bin:$PATH"
+# # Added by n-install (see http://git.io/n-install-repo).
+# export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
 
-# Added by n-install (see http://git.io/n-install-repo).
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
-
-export PATH="/Users/lisadean/Library/Python/3.7/bin:$PATH"
+# export PATH="/Users/lisadean/Library/Python/3.7/bin:$PATH"
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
