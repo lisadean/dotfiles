@@ -1,0 +1,78 @@
+# git checkout branch
+function gcb {
+  branchName=$1
+
+  git show-ref --verify --quiet refs/heads/${branchName}
+  exists=$? # $? == 0 means local branch already exists
+
+  if [ ${exists} -eq 0 ]; then
+    echo "Checking out existing branch ${branchName}"
+    git checkout ${branchName}
+  else
+    echo "Creating new branch ${branchName}"
+    git checkout -b ${branchName}
+  fi
+}
+export -f gcb
+
+function gcbs {
+  issueNumber=$1
+  issuePrefix='HMW-'
+  branchName="${issuePrefix}${issueNumber}"
+  gcb ${branchName}
+}
+export -f gcbs
+
+# git checkout remote branch
+function gcrb {
+  branchName=$1
+  git checkout -b ${branchName} origin/${branchName}
+}
+export gcrb
+
+function gcrbs {
+  issueNumber=$1
+  issuePrefix='HMW-'
+  branchName="${issuePrefix}${issueNumber}"
+  gcrb ${branchName}
+}
+
+# git branch delete
+function gbd {
+  branchName=$1
+  echo "Deleting branch ${branchName}"
+  git branch -d ${branchName}
+  echo
+  echo Branches:
+  git branch --list
+}
+export -f gbd
+
+function gbds {
+  issueNumber=$1
+  issuePrefix='SODEV-'
+  branchName="${issuePrefix}${issueNumber}"
+  gbd ${branchName}
+}
+export -f gbds
+
+# git push
+function gp {
+  # Set upstream for new branch if needed and do a git push. Don't push to master
+
+  branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null)"
+  upstream="$(git rev-parse --abbrev-ref ${branchName}@{upstream} 2> /dev/null)"
+
+  if [ "${branchName}" ] && [ "${branchName}" != "master" ]; then
+    if [ -z "${upstream}" ]; then
+      echo "New branch. Setting remote for ${branchName} and pushing to remote"
+      git push --set-upstream origin ${branchName}
+    else
+    echo "Existing upstream. Pushing to ${branchName} remote"
+      git push
+    fi
+  else
+    echo "\n**********************************\nDon't push to master! (or something else went wrong)\n**********************************\n"
+  fi
+}
+export -f gp
