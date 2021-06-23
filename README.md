@@ -32,6 +32,15 @@ nvm install --lts
 
 # Install Dropbox
 brew install --cask dropbox
+
+# Install via Mac App Store
+brew install mas
+# Magnet
+mas install 441258766
+# Xcode. Will take forever to download, yes. Not needed by everyone.
+mas install 497799835
+# Slack
+brew install slack
 ```
 
 
