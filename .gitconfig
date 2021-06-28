@@ -13,3 +13,7 @@
 	trustExitCode = true
 [commit]
 	template = /Users/lisadean/.stCommitMsg
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
