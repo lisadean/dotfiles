@@ -1,6 +1,6 @@
 # dotfiles
 
- ## Setup new computer
+## Setup new computer
 
 ```
 
@@ -25,6 +25,10 @@ brew install --cask 1password
 # Install VS Code
 brew install --cask visual-studio-code
 
+# Install python
+xcode-select --install
+brew install python
+
 # Install NVM & node
 brew install nvm
 nvm install node
@@ -43,10 +47,8 @@ mas install 497799835
 brew install slack
 ```
 
-
-
 ## Inspiration
 
 (among others):  
 https://github.com/holman/dotfiles  
-https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789  
+https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
