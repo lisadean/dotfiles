@@ -63,16 +63,34 @@ function gp {
   branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null)"
   upstream="$(git rev-parse --abbrev-ref ${branchName}@{upstream} 2> /dev/null)"
 
-  if [ "${branchName}" ] && [ "${branchName}" != "master" ]; then
+  function doPush() {
     if [ -z "${upstream}" ]; then
       echo "New branch. Setting remote for ${branchName} and pushing to remote"
       git push --set-upstream origin ${branchName}
     else
-    echo "Existing upstream. Pushing to ${branchName} remote"
+      echo "Existing upstream. Pushing to ${branchName} remote"
       git push
     fi
+    return
+  }
+
+  if [ "${branchName}" == "master" ] || [ "${branchName}" == "main" ]; then
+    RED='\033[0;31m'
+    RESET='\033[m'
+    echo -e "☠️   ☠️   ${RED}You are pushing to master. Are you sure?${RESET}   ☠️   ☠️"
+    echo
+    echo -e "Choose a selection by using the number of the selection:"
+    select yn in "Yes" "No"
+    do
+      case $yn in
+        Yes ) doPush; break;;
+        No ) echo -e "Bailing on push"; break;;
+      esac
+    done
   else
-    echo "\n**********************************\nDon't push to master! (or something else went wrong)\n**********************************\n"
+    doPush
   fi
+
+  return
 }
 export -f gp

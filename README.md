@@ -1,54 +1,88 @@
 # dotfiles
 
-## Setup new computer
+## Prep
 
+1. Install [homebrew](https://brew.sh/): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. GitHub CLI: `brew install gh`
+1. Cache GH credentials: `gh auth login`
+1. Config git (replace email)
+
+```bash
+email=lisa.dean@supply.com
+git config --global user.name "Lisa Dean"
+git config --global user.email $email
+git config --global init.defaultBranch main
+git config --global init.templatedir '~/dotfiles/.git-templates'
 ```
 
-# Generate new SSH key and copy to clipboard to add to Github account
-ssh-keygen -t ed25519 -C "lisa@lisadean.net"
-pbcopy < ~/.ssh/id_ed25519.pub
+1. Clone repo at home dir root: `git clone https://github.com/lisadean/dotfiles.git`
+1. Run `install_dotfiles.sh`
+1. Create `.secrets` file and set variables
 
-# Change default shell to bash
-chsh -s /bin/bash
+### Homebrew installs
 
-# Clone git repo to $HOME and run install_dotfiles.sh
+1. Install Google Chrome if needed: `brew install --cask google-chrome`
 
-# Install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+1. bat: `brew install bat`
+1. z: `brew install z`
+1. Neofetch: `brew install neofetch`
+1. NVM: `brew install nvm`
+1. Mac App Store CLI: `brew install mas`
+1. 1Password: `brew install --cask 1password`
+1. Dropbox: `brew install --cask dropbox`
+1. VS Code: `brew install --cask visual-studio-code`
+1. Postman: `brew install --cask postman`
+1. Docker: `brew install --cask docker`
+1. Discord: `brew install --cask discord`
+1. Rocket: `brew install --cask rocket`
+1. Raindrop: `brew install --cask raindropio`
 
-# Install Google Chrome
-brew install --cask google-chrome
-
-# Install 1Password
-brew install --cask 1password
-
-# Install VS Code
-brew install --cask visual-studio-code
-
-# Install python
-xcode-select --install
-brew install python
-
-# Install NVM & node
-brew install nvm
-nvm install node
-nvm install --lts
-
-# Install Dropbox
-brew install --cask dropbox
-
-# Install via Mac App Store
-brew install mas
-# Magnet
-mas install 441258766
-# Xcode. Will take forever to download, yes. Not needed by everyone.
-mas install 497799835
-# Slack
-brew install slack
+```bash
+brew install bat z neofetch nvm mas
+brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio
 ```
+
+### NVM install of Node
+
+1. Node: `nvm install --lts`
+
+### mas installs
+
+1. Slack: `mas install 803453959`
+1. Bear: `mas install 1091189122`
+1. Magnet: `mas install 441258766`
+1. Jump Desktop: `mas install 524141863`
+1. Reeder: `mas install 1529448980`
+1. Xcode (if needed): `mas install 497799835`
+
+```bash
+mas install 803453959 1091189122 441258766 524141863 1529448980
+```
+
+## Manual setup
+
+1. Remap CAPS_LOCK to ESCAPE: Preferences > Keyboard > Modifier Keys...
+1. Disable spotlight search for everything except
+
+   - Applications
+   - Calculator
+   - Conversion
+   - Definition
+   - System Preferences
+
+1. Disable Ask Siri
+1. Make cursor one notch bigger: Preferences > Accessibility > Display > Cursor
 
 ## Inspiration
 
-(among others):  
-https://github.com/holman/dotfiles  
+(among others):
+https://github.com/holman/dotfiles
 https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
+
+```
+
+```
+
+```
+
+```

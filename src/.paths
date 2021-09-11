@@ -1,0 +1,8 @@
+export DOTFILES_DIR="$HOME/dotfiles"
+export PATH="$DOTFILES_DIR/scripts:$PATH"
+
+# Add Visual Studio Code command line
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+# OpenJDK
+export PATH="/usr/local/opt/openjdk/bin:$PATH"

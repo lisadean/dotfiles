@@ -1,6 +1,6 @@
-alias la="ls -la"
-alias ll='ls -alF'
-alias lat='ls -lat'
+alias la="ls -laG"
+alias ll='ls -alFG'
+alias lat='ls -latG'
 
 alias fucking='sudo'
 
@@ -9,6 +9,13 @@ alias glo="git log --oneline"
 alias gs="git status"
 alias gl="git log"
 alias gc="git checkout"
+alias gclean="git clean-branches"
+
+alias jest="./node_modules/.bin/jest"
+
+alias lsof-react="lsof -i :9000 -i :9001 -i :9002 -i :9003"
+
+# alias xcode="open *.xcodeproj"
 
 # alias python='python3'
 # alias pip='pip3'

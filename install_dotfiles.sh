@@ -1,9 +1,22 @@
-DOTFILES_DIR=~/dotfiles
+DOTFILES_DIR=`pwd`
 
-ln -svf "${DOTFILES_DIR}/.bash_profile" ~
-ln -svf "${DOTFILES_DIR}/.aliases" ~
-ln -svf "${DOTFILES_DIR}/.functions" ~
-ln -svf "${DOTFILES_DIR}/.gitconfig" ~
-ln -svf "${DOTFILES_DIR}/.gitignore_global" ~
-ln -svf "${DOTFILES_DIR}/.prompt" ~
-ln -svf "${DOTFILES_DIR}/.paths" ~
+function install() {
+  file=$1
+  target=~/${file}
+  source="${DOTFILES_DIR}/src/${file}"
+  if [ -e $target ] && ! [ -L $target ]; then
+    backup_file=$target.bak$(date +%s)
+    echo "$file exists: Backing up to $backup_file"
+    cp $target $target.bak$(date +%s)
+  fi
+  ln -svf "$source" ~
+}
+
+install .profile
+install .bashrc
+install .aliases
+install .functions
+install .gitignore_global
+install .prompt
+install .paths
+install .npmrc
