@@ -2,10 +2,25 @@
 
 ## Prep
 
-1. Install [homebrew](https://brew.sh/): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-1. GitHub CLI: `brew install gh`
-1. Cache GH credentials: `gh auth login`
-1. Config git (replace email)
+Install [homebrew](https://brew.sh/):
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+GitHub CLI:
+
+```bash
+brew install gh
+```
+
+Cache GH credentials:
+
+```bash
+gh auth login
+```
+
+Config git (replace email)
 
 ```bash
 email=lisa.dean@supply.com
@@ -15,14 +30,19 @@ git config --global init.defaultBranch main
 git config --global init.templatedir '~/dotfiles/.git-templates'
 ```
 
-1. Clone repo at home dir root: `git clone https://github.com/lisadean/dotfiles.git`
-1. Run `install_dotfiles.sh`
-1. Create `.secrets` file and set variables
+Clone repo at home dir root:
+
+```bash
+git clone https://github.com/lisadean/dotfiles.git
+```
+
+Run `install_dotfiles.sh`
+
+Create `.secrets` file in ~ and set variables
 
 ### Homebrew installs
 
 1. Install Google Chrome if needed: `brew install --cask google-chrome`
-
 1. bat: `brew install bat`
 1. z: `brew install z`
 1. Neofetch: `brew install neofetch`
@@ -44,7 +64,11 @@ brew install --cask 1password dropbox visual-studio-code postman docker discord 
 
 ### NVM install of Node
 
-1. Node: `nvm install --lts`
+1. Node:
+
+```bash
+nvm install --lts
+```
 
 ### mas installs
 
@@ -78,11 +102,3 @@ mas install 803453959 1091189122 441258766 524141863 1529448980
 (among others):
 https://github.com/holman/dotfiles
 https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
-
-```
-
-```
-
-```
-
-```
