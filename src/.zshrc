@@ -1,7 +1,7 @@
-[ -s ~/.secrets ] && source ~/.secrets
-source ~/.aliases
-source ~/.functions
-source ~/.prompt
+[ -s $HOME/.secrets ] && source $HOME/.secrets
+source $HOME/.aliases
+source $HOME/.functions
+# source $HOME/.prompt
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

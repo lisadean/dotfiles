@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+chsh -s /bin/bash
+
 DOTFILES_DIR=`pwd`
 
 function install() {
@@ -12,8 +16,7 @@ function install() {
   ln -svf "$source" ~
 }
 
-install .profile
-install .bashrc
+install .bash_profile
 install .aliases
 install .functions
 install .gitignore_global
