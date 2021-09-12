@@ -36,6 +36,12 @@ Clone repo at home dir root:
 git clone https://github.com/lisadean/dotfiles.git
 ```
 
+Set default shell to bash
+
+```bash
+chsh -s /bin/bash
+```
+
 Run `install_dotfiles.sh`
 
 Create `.secrets` file in ~ and set variables
