@@ -87,16 +87,16 @@ nvm install --lts
 1. Slack: `mas install 803453959`
 1. Bear: `mas install 1091189122`
 1. Magnet: `mas install 441258766`
-1. Jump Desktop: `mas install 524141863`
 1. Reeder: `mas install 1529448980`
 1. Xcode (if needed): `mas install 497799835`
 
 ```bash
-mas install 803453959 1091189122 441258766 524141863 1529448980
+mas install 803453959 1091189122 441258766 1529448980
 ```
 
 ## Manual setup
 
+1. Install Jump Desktop Connect: https://www.jumpdesktop.com/connect/
 1. Remap CAPS_LOCK to ESCAPE: Preferences > Keyboard > Modifier Keys...
 1. Disable spotlight search for everything except
 
