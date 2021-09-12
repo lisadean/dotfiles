@@ -97,6 +97,7 @@ mas install 803453959 1091189122 441258766 524141863 1529448980
 
 ## Manual setup
 
+1. Install Jump Desktop Connect: https://www.jumpdesktop.com/connect/
 1. Remap CAPS_LOCK to ESCAPE: Preferences > Keyboard > Modifier Keys...
 1. Disable spotlight search for everything except
 
