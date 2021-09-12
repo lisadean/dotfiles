@@ -28,6 +28,7 @@ git config --global user.name "Lisa Dean"
 git config --global user.email $email
 git config --global init.defaultBranch main
 git config --global init.templatedir '~/dotfiles/.git-templates'
+git config --global pull.rebase false
 ```
 
 Clone repo at home dir root:
