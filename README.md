@@ -52,7 +52,6 @@ Create `.secrets` file in ~ and set variables
 1. bat: `brew install bat`
 1. z: `brew install z`
 1. Neofetch: `brew install neofetch`
-1. NVM: `brew install nvm`
 1. Mac App Store CLI: `brew install mas`
 1. 1Password: `brew install --cask 1password`
 1. Dropbox: `brew install --cask dropbox`
@@ -65,13 +64,19 @@ Create `.secrets` file in ~ and set variables
 1. WhatsApp: `brew install --cask whatsapp`
 
 ```bash
-brew install bat z neofetch nvm mas
+brew install bat z neofetch mas
 brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp
 ```
 
-### NVM install of Node
+### Install NVM and Node
 
-1. Node:
+1. NVM
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+```
+
+1. Node
 
 ```bash
 nvm install --lts
