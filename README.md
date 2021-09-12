@@ -62,10 +62,11 @@ Create `.secrets` file in ~ and set variables
 1. Discord: `brew install --cask discord`
 1. Rocket: `brew install --cask rocket`
 1. Raindrop: `brew install --cask raindropio`
+1. WhatsApp: `brew install --cask whatsapp`
 
 ```bash
 brew install bat z neofetch nvm mas
-brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio
+brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp
 ```
 
 ### NVM install of Node
