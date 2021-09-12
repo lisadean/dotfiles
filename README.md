@@ -65,8 +65,7 @@ Create `.secrets` file in ~ and set variables
 1. WhatsApp: `brew install --cask whatsapp`
 
 ```bash
-brew install bat z neofetch mas
-brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp
+brew install bat z neofetch mas; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp
 ```
 
 ### Install NVM and Node
