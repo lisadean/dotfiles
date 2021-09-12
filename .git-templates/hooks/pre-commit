@@ -27,4 +27,3 @@ if [ "${branchName}" == "master" ] || [ "${branchName}" == "main" ]; then
 fi
 
 echo "Pre-commit hook ran"
-exit 0
