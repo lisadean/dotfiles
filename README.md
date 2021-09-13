@@ -115,3 +115,11 @@ mas install 803453959 1091189122 441258766 1529448980
 (among others):
 https://github.com/holman/dotfiles
 https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
+
+## Submodules and other code
+
+Using submodules: http://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+Git toolkit: https://gist.github.com/eeichinger/1044107a1126901249b1164dac2fce15
+
+Extending git: https://coderwall.com/p/bt93ia/extend-git-with-custom-commands
