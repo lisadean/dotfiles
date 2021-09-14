@@ -29,6 +29,7 @@ git config --global user.email $email
 git config --global init.defaultBranch main
 git config --global init.templatedir '~/dotfiles/.git-templates'
 git config --global pull.rebase false
+git config --global core.excludesfile ~/.gitignore_global
 ```
 
 Clone repo at home dir root:
@@ -98,7 +99,8 @@ mas install 803453959 1091189122 441258766 1529448980
 ## Manual setup
 
 1. Install Jump Desktop Connect: https://www.jumpdesktop.com/connect/
-1. Remap CAPS_LOCK to ESCAPE: Preferences > Keyboard > Modifier Keys...
+1. Remap CAPS_LOCK to ESCAPE if needed: Preferences > Keyboard > Modifier Keys...
+1. Turn off Space rearranging: Preferences > Mission Control > Automatically rearrange Spaces based on most recent use
 1. Disable spotlight search for everything except
 
    - Applications
