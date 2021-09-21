@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # We check this so SourceTree can handle this hook
-; if [ -e ~/.bash_profile ]
-; then
-;     source ~/.bash_profile
-; fi
+# if [ -e ~/.bash_profile ]
+# then
+#     source ~/.bash_profile
+# fi
 
 # Warn if committing to master
 branchName="$(git symbolic-ref --quiet --short HEAD 2> /dev/null)"
