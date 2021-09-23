@@ -1,6 +1,5 @@
-alias la="ls -laG"
-alias ll='ls -alFG'
-alias lat='ls -latG'
+alias ll='ls -laGFT'
+alias llmod='ll -t'
 
 alias fucking='sudo'
 
