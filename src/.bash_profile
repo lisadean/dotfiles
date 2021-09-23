@@ -1,3 +1,6 @@
+export DOTFILES_DIR="$HOME/dotfiles"
+export CODE_DIR="$HOME/work"
+
 [ -s ~/.secrets ] && source ~/.secrets
 source ~/.paths
 source ~/.aliases

@@ -3,6 +3,11 @@ alias llmod='ll -t'
 
 alias fucking='sudo'
 
+alias cdot="code $DOTFILES_DIR/."
+alias crbs="code $HOME/react-build-store/."
+alias cnode="code $HOME/node-store/."
+alias cfwp="code $HOME/fergy-web-platform/."
+
 alias gbl="git branch --list"
 alias glo="git log --oneline"
 alias gs="git status"
