@@ -4,14 +4,14 @@ alias llmod='ll -t'
 alias fucking='sudo'
 
 alias cdot="code $DOTFILES_DIR/."
-alias crbs="code $HOME/react-build-store/."
-alias cnode="code $HOME/node-store/."
-alias cfwp="code $HOME/fergy-web-platform/."
+alias crbs="code $CODE_DIR/react-build-store/."
+alias cnode="code $CODE_DIR/node-store/."
+alias cfwp="code $CODE_DIR/fergy-web-platform/."
 
 alias cddot="cd $DOTFILES_DIR/"
-alias cdrbs="cd $HOME/react-build-store/"
-alias cdnode="cd $HOME/node-store/"
-alias cdfwp="cd $HOME/fergy-web-platform/"
+alias cdrbs="cd $CODE_DIR/react-build-store/"
+alias cdnode="cd $CODE_DIR/node-store/"
+alias cdfwp="cd $CODE_DIR/fergy-web-platform/"
 
 alias gbl="git branch --list"
 alias glo="git log --oneline"
