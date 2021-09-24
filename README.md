@@ -55,6 +55,7 @@ Create `.secrets` file in ~ and set variables
 1. z: `brew install z`
 1. Neofetch: `brew install neofetch`
 1. Mac App Store CLI: `brew install mas`
+1. Tree: `brew install tree`
 1. 1Password: `brew install --cask 1password`
 1. Dropbox: `brew install --cask dropbox`
 1. VS Code: `brew install --cask visual-studio-code`
@@ -68,7 +69,7 @@ Create `.secrets` file in ~ and set variables
 1. GitHub Desktop: `brew install --cask github`
 
 ```bash
-brew install bat z neofetch mas; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github
+brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github
 ```
 
 ### Install NVM and Node
