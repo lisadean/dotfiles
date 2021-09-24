@@ -20,6 +20,9 @@ alias gl="git log"
 alias gc="git checkout"
 alias gclean="git clean-branches"
 
+# Usage: tree 1
+alias tree="tree -L"
+
 alias jest="./node_modules/.bin/jest"
 
 alias lsof-react="lsof -i :9000 -i :9001 -i :9002 -i :9003"
