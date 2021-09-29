@@ -67,9 +67,10 @@ Create `.secrets` file in ~ and set variables
 1. WhatsApp: `brew install --cask whatsapp`
 1. Fira font: `brew install --cask homebrew/cask-fonts/font-fira-code`
 1. GitHub Desktop: `brew install --cask github`
+1. Parallels: `brew install --cask parallels`
 
 ```bash
-brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github
+brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels
 ```
 
 ### Install NVM and Node
