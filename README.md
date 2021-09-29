@@ -51,6 +51,7 @@ Create `.secrets` file in ~ and set variables
 ### Homebrew installs
 
 1. Install Google Chrome if needed: `brew install --cask google-chrome`
+1. --or-- Brave: `brew install --cask brave-browser`
 1. bat: `brew install bat`
 1. z: `brew install z`
 1. Neofetch: `brew install neofetch`
@@ -70,7 +71,7 @@ Create `.secrets` file in ~ and set variables
 1. Parallels: `brew install --cask parallels`
 
 ```bash
-brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels
+brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser
 ```
 
 ### Install NVM and Node
