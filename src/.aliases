@@ -20,8 +20,8 @@ alias gl="git log"
 alias gc="git checkout"
 alias gclean="git clean-branches"
 
-# Usage: tree 1
-alias tree="tree -L"
+# Usage: tree 3
+alias tree='tree -LCF'
 
 alias bashclean="env -i bash --norc --noprofile"
 
