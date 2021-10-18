@@ -38,3 +38,5 @@ alias lsof-react="lsof -i :9000 -i :9001 -i :9002 -i :9003"
 
 alias simulator='open -a Simulator.app'
 alias startios='react-native run-ios --simulator="iPhone 8 Plus"'
+
+alias typegen='npm run generate-graphql-types'
