@@ -5,11 +5,13 @@ alias fucking='sudo'
 
 alias cdot="code $DOTFILES_DIR/."
 alias crbs="code $CODE_DIR/react-build-store/."
+alias crbs2="code $CODE_DIR/react-build-store-alt/."
 alias cnode="code $CODE_DIR/node-store/."
 alias cfwp="code $CODE_DIR/fergy-web-platform/."
 
 alias cddot="cd $DOTFILES_DIR/"
 alias cdrbs="cd $CODE_DIR/react-build-store/"
+alias cdrbs2="cd $CODE_DIR/react-build-store-alt/"
 alias cdnode="cd $CODE_DIR/node-store/"
 alias cdfwp="cd $CODE_DIR/fergy-web-platform/"
 
