@@ -103,6 +103,7 @@ mas install 803453959 1091189122 441258766 1529448980
 ## Manual setup
 
 1. Install Jump Desktop Connect: https://www.jumpdesktop.com/connect/
+1. Install MuteMe software: https://muteme.com/pages/downloads
 1. Remap CAPS_LOCK to ESCAPE if needed: Preferences > Keyboard > Modifier Keys...
 1. Turn off Space rearranging: Preferences > Mission Control > Automatically rearrange Spaces based on most recent use
 1. Disable spotlight search for everything except
