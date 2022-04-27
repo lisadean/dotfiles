@@ -69,9 +69,10 @@ Create `.secrets` file in ~ and set variables
 1. Fira font: `brew install --cask homebrew/cask-fonts/font-fira-code`
 1. GitHub Desktop: `brew install --cask github`
 1. Parallels: `brew install --cask parallels`
+1. DB Browser for SQLLite: `brew install --cask db-browser-for-sqlite`
 
 ```bash
-brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser
+brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser db-browser-for-sqlite
 ```
 
 ### Install NVM and Node
