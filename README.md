@@ -70,9 +70,10 @@ Create `.secrets` file in ~ and set variables
 1. GitHub Desktop: `brew install --cask github`
 1. Parallels: `brew install --cask parallels`
 1. DB Browser for SQLLite: `brew install --cask db-browser-for-sqlite`
+1. Python Install Manager: `brew install pyenv`
 
 ```bash
-brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser db-browser-for-sqlite
+brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser db-browser-for-sqlite pyenv
 ```
 
 ### Install NVM and Node
@@ -117,6 +118,7 @@ mas install 803453959 1091189122 441258766 1529448980
 
 1. Disable Ask Siri
 1. Make cursor one notch bigger: Preferences > Accessibility > Display > Cursor
+1. Python might need some manual setup still: https://www.freecodecamp.org/news/python-version-on-mac-update/
 
 ## Inspiration
 
