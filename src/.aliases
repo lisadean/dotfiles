@@ -1,7 +1,8 @@
 alias ll='ls -laGFT'
 alias llmod='ll -t'
 
-alias fucking='sudo'
+alias fucking='sudo $(history -p !!)'
+alias fuckingplease='sudo "$BASH" -c "$(history -p !!)"'
 
 alias cdot="code $DOTFILES_DIR/."
 alias crbs="code $CODE_DIR/react-build-store/."
