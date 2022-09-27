@@ -23,3 +23,4 @@ install .gitignore_global
 install .prompt
 install .paths
 install .npmrc
+install restclient.http

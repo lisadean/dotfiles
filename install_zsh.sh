@@ -28,3 +28,4 @@ function install() {
 # install .prompt
 # install .paths
 # install .npmrc
+# install restclient.http
