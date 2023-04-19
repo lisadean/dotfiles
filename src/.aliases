@@ -32,7 +32,7 @@ alias tree='tree -LCF'
 
 alias bashclean="env -i bash --norc --noprofile"
 
-alias lsof-react="lsof -i :9000 -i :9001 -i :9002 -i :9003"
+alias lsof-react="lsof -i :9000 -i :9001 -i :9002 -i :9003 -i :4000 -i :3000"
 
 # alias xcode="open *.xcodeproj"
 
