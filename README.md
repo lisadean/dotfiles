@@ -72,9 +72,10 @@ Create `.secrets` file in ~ and set variables
 1. DB Browser for SQLLite: `brew install --cask db-browser-for-sqlite`
 1. Rectangle: `brew install --cask rectangle`
 1. Python Install Manager: `brew install pyenv`
+1. tldr: `brew install tldr`
 
 ```bash
-brew install bat z neofetch mas tree; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser db-browser-for-sqlite pyenv rectangle
+brew install bat z neofetch mas tree tldr; brew install --cask 1password dropbox visual-studio-code postman docker discord rocket raindropio whatsapp homebrew/cask-fonts/font-fira-code github parallels brave-browser db-browser-for-sqlite pyenv rectangle
 ```
 
 ### Install NVM and Node
