@@ -39,7 +39,7 @@ Authorization: token {{$processEnv NPM_TOKEN}}
 
 ###
 
-GET https://api.github.com/repos/buildcom/react-build-store/pulls/4685 HTTP/1.1
+GET https://api.github.com/repos/buildcom/react-build-store/pulls/4899 HTTP/1.1
 Accept: application/vnd.github.v3+json
 Authorization: token {{$processEnv NPM_TOKEN}}
 

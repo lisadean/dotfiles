@@ -1,7 +1,7 @@
 export PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Add Visual Studio Code command line
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+# export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 # OpenJDK
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
