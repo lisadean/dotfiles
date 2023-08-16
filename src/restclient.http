@@ -114,3 +114,18 @@ Accept: application/vnd.github.v3+json
 Authorization: token {{$processEnv NPM_TOKEN}}
 
 ###
+
+GET http://config.sys.ds.wolseley.com/react-build-store/local/ HTTP/1.1
+Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
+
+###
+
+GET http://config.sys.ds.wolseley.com/build-node-store/local/ HTTP/1.1
+Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
+
+###
+
+GET http://config.sys.ds.wolseley.com/store-features/local/ HTTP/1.1
+Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
+
+###
