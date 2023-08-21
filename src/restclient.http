@@ -119,13 +119,60 @@ GET http://config.sys.ds.wolseley.com/react-build-store/local/ HTTP/1.1
 Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
 
 ###
+GET http://config.sys.ds.wolseley.com/react-build-store/production/ HTTP/1.1
+Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
+
+###
 
 GET http://config.sys.ds.wolseley.com/build-node-store/local/ HTTP/1.1
 Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
 
 ###
 
-GET http://config.sys.ds.wolseley.com/store-features/local/ HTTP/1.1
+GET http://config.sys.ds.wolseley.com/store-features/production/ HTTP/1.1
 Authorization: Basic Y29uZmlnOkNoZXZlMWxlIQ==
+
+###
+
+GET http://graphql.build.com/graphql HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtcGxveWVlSWQiOiI1MjIwIiwiY3VzdG9tZXJJZCI6MCwicHJpY2VCb29rSWQiOjF9LCJpYXQiOjE2OTIzMDQ5ODN9.AhvDeCUsFD8VdiIQrIXNBzO_K0hbSfQbSB-XIHA7nks
+
+###
+
+POST https://npndev.build.com/graphql HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtcGxveWVlSWQiOiI1MjIwIiwiY3VzdG9tZXJJZCI6MCwicHJpY2VCb29rSWQiOjF9LCJpYXQiOjE2OTIzMDQ5ODN9.AhvDeCUsFD8VdiIQrIXNBzO_K0hbSfQbSB-XIHA7nks
+X-REQUEST-TYPE: GraphQL
+
+query Features($featureNames: [String!]!, $path: String!) {
+  features(featureNames: $featureNames, path: $path)
+}
+
+{"featureNames":["enable-vizury-opt-in-popup"],"path":"/"}
+
+###
+
+POST http://react-build-store-pr-50.sys.id.build.com:3001/graphql HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtcGxveWVlSWQiOiI1MjIwIiwiY3VzdG9tZXJJZCI6MCwicHJpY2VCb29rSWQiOjF9LCJpYXQiOjE2OTIzMDQ5ODN9.AhvDeCUsFD8VdiIQrIXNBzO_K0hbSfQbSB-XIHA7nks
+X-REQUEST-TYPE: GraphQL
+
+query Features($featureNames: [String!]!, $path: String!) {
+  features(featureNames: $featureNames, path: $path)
+}
+
+{"featureNames":["enable-vizury-opt-in-popup"],"path":"/"}
+
+###
+POST http://react-build-store-pr-50.sys.id.build.com:3000/graphql HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtcGxveWVlSWQiOiI1MjIwIiwiY3VzdG9tZXJJZCI6MCwicHJpY2VCb29rSWQiOjF9LCJpYXQiOjE2OTIzMDQ5ODN9.AhvDeCUsFD8VdiIQrIXNBzO_K0hbSfQbSB-XIHA7nks
+X-REQUEST-TYPE: GraphQL
+
+query Features($featureNames: [String!]!, $path: String!) {
+  features(featureNames: $featureNames, path: $path)
+}
+
+{"featureNames":["enable-vizury-opt-in-popup"],"path":"/"}
 
 ###
