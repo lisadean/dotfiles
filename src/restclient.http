@@ -176,3 +176,17 @@ query Features($featureNames: [String!]!, $path: String!) {
 {"featureNames":["enable-vizury-opt-in-popup"],"path":"/"}
 
 ###
+
+# curl -L \
+#   -X POST \
+#   -H "Accept: application/vnd.github+json" \
+#   -H "Authorization: Bearer <YOUR-TOKEN>" \
+#   -H "X-GitHub-Api-Version: 2022-11-28" \
+#   https://api.github.com/repos/OWNER/REPO/check-runs \
+#   -d '{"name":"mighty_readme","head_sha":"ce587453ced02b1526dfb4cb910479d431683101","status":"in_progress","external_id":"42","started_at":"2018-05-04T01:14:52Z","output":{"title":"Mighty Readme report","summary":"","text":""}}'
+
+GET https://api.github.com/repos/buildcom/react-build-store/events HTTP/1.1
+Accept: application/vnd.github.v3+json
+Authorization: token {{$processEnv NPM_TOKEN}}
+
+###
