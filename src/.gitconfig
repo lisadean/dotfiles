@@ -4,16 +4,21 @@
 [color]
 	ui = auto
 [core]
-	excludesfile = /Users/lisadean/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[commit]
-	template = /Users/lisadean/.stCommitMsg
-[diff]
-    tool = default-difftool
-[difftool "default-difftool"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+	excludesfile = /Users/abb2175/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+	templatedir = ~/dotfiles/.git-templates
+[pull]
+	rebase = false
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[url "git@FergDigitalCommerce:FergDigitalCommerce"]
+    insteadOf = git@github.com:FergDigitalCommerce
+		insteadOf = https://github.com/FergDigitalCommerce
+    insteadOf = git@github.com:buildcom
+		insteadOf = https://github.com/buildcom

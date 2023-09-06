@@ -2,7 +2,7 @@ export DOTFILES_DIR="$HOME/dotfiles"
 export CODE_DIR="$HOME/work"
 
 [ -s ~/.secrets ] && source ~/.secrets
-export GITHUB_TOKEN=${NPM_TOKEN}
+# export GITHUB_TOKEN=${NPM_TOKEN}
 source ~/.paths
 source ~/.aliases
 source ~/.functions
