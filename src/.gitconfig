@@ -15,10 +15,10 @@
 	templatedir = ~/dotfiles/.git-templates
 [pull]
 	rebase = false
-[url "git@github.com:"]
+[url "git@github.com"]
     insteadOf = https://github.com/
 [url "git@FergDigitalCommerce:FergDigitalCommerce"]
     insteadOf = git@github.com:FergDigitalCommerce
 		insteadOf = https://github.com/FergDigitalCommerce
-    insteadOf = git@github.com:buildcom
-		insteadOf = https://github.com/buildcom
+    # insteadOf = git@github.com:buildcom
+		# insteadOf = https://github.com/buildcom
