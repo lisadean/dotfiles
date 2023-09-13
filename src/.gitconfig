@@ -1,10 +1,8 @@
 [user]
-	name = Lisa Dean
-	email = lisa@lisadean.net
+	name = Lisa-Dean-ABB2175_ferg
+	email = lisa.dean@supply.com
 [color]
 	ui = auto
-[core]
-	excludesfile = /Users/abb2175/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -12,7 +10,6 @@
 	required = true
 [init]
 	defaultBranch = main
-	templatedir = ~/dotfiles/.git-templates
 [pull]
 	rebase = false
 [url "git@github.com:"]
