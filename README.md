@@ -128,6 +128,10 @@ mas install 803453959 1091189122 1529448980
 https://github.com/holman/dotfiles
 https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
 
+- Very clean simple dotfiles repo. Nice examples of per-machine and per-user configs
+  - [docs](https://drewdevault.com/2019/12/30/dotfiles.html)
+  - [repo](https://git.sr.ht/~sircmpwn/dotfiles/tree)
+
 ## Submodules and other code
 
 Using submodules: http://git-scm.com/book/en/v2/Git-Tools-Submodules
