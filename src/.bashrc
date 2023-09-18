@@ -1,7 +1,8 @@
+# shellcheck shell=bash
 echo "Loading .bashrc"
 
 ####################################################################################################
-export DOTFILES_DIR="$HOME/dotfiles"
+export DOTFILES_DIR="$HOME/.dotfiles"
 export CODE_DIR="$HOME/work"
 export CONFIG_DIR="$HOME/.config"
 
@@ -38,20 +39,20 @@ export REPO_DIR="$HOME/repos"
 
 function ld() { builtin cd "$@" && ls -laGFT; }
 
-# This is for working with my dotfiles repo
-# alias config='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
-# alias cgs='config status'
-# alias cgs-untracked='config status -unormal'
-function git() {
-    if [[ "$PWD" == "$HOME" ]]; then
-      # echo "I'm home"
-      # config "$@"
-      /usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME "$@"
-    else
-      # echo "I'm not home"
-      command git "$@"
-    fi
-}
+# # This is for working with my dotfiles repo
+# # alias config='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
+# # alias cgs='config status'
+# # alias cgs-untracked='config status -unormal'
+# function git() {
+#     if [[ "$PWD" == "$HOME" ]]; then
+#       # echo "I'm home"
+#       # config "$@"
+#       /usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME "$@"
+#     else
+#       # echo "I'm not home"
+#       command git "$@"
+#     fi
+# }
 
 function gd() {
   GIT_USER_NAME='Lisa Dean'
