@@ -1,5 +1,9 @@
 # dotfiles
 
+## checkout this script for alternative way to script a lot of this
+
+https://github.com/makccr/dot/blob/master/.scripts/macOS
+
 ## Prep
 
 Install [homebrew](https://brew.sh/):
