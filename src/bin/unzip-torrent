@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rootDir=$(pwd)
+mkdir workingTemp
+workingDir="${rootDir}/workingTemp"
+
+for 
