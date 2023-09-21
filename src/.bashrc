@@ -6,7 +6,7 @@ export DOTFILES_DIR="$HOME/.dotfiles"
 export CODE_DIR="$HOME/work"
 export CONFIG_DIR="$HOME/.config"
 
-[ -s ~/.secrets ] && source ~/.secrets
+[ -s "$DOTFILES_DIR"/.secrets ] && source "$DOTFILES_DIR"/.secrets
 # export GITHUB_TOKEN=${NPM_TOKEN}
 source $CONFIG_DIR/.bash.paths
 source $CONFIG_DIR/.bash.aliases
