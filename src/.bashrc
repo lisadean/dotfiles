@@ -1,4 +1,5 @@
-# shellcheck shell=bash
+#! /usr/bin/env bash
+
 echo "Loading .bashrc"
 
 ####################################################################################################
@@ -8,10 +9,10 @@ export CONFIG_DIR="$HOME/.config"
 
 [ -s "$DOTFILES_DIR"/.secrets ] && source "$DOTFILES_DIR"/.secrets
 # export GITHUB_TOKEN=${NPM_TOKEN}
-source $CONFIG_DIR/.bash.paths
-source $CONFIG_DIR/.bash.aliases
-source $CONFIG_DIR/.bash.functions
-source $CONFIG_DIR/.bash.prompt
+source "$CONFIG_DIR"/.bash.paths
+source "$CONFIG_DIR"/.bash.aliases
+source "$CONFIG_DIR"/.bash.functions
+source "$CONFIG_DIR"/.bash.prompt
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
