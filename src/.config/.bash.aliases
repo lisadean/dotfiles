@@ -5,6 +5,7 @@ alias fuck='sudo $(history -p !!)'
 alias fuckingplease='sudo "$BASH" -c "$(history -p !!)"'
 
 alias crbs="code $CODE_DIR/bwf-web-store/."
+alias cdrbs="cd $CODE_DIR/bwf-web-store/"
 
 alias cdot="code $DOTFILES_DIR/."
 alias crbsold="code $CODE_DIR/react-build-store/."
