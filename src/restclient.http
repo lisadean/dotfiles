@@ -1,7 +1,7 @@
 POST https://api.github.com/repos/buildcom/the-sorting-hat/actions/workflows/release-dry-run.yml/dispatches HTTP/1.1
 Accept: application/vnd.github.v3+json
 content-type: application/json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 {"ref":"SODEV-34573"}
 
@@ -10,7 +10,7 @@ Authorization: token {{$processEnv NPM_TOKEN}}
 POST https://api.github.com/repos/buildcom/the-sorting-hat/actions/workflows/release-dev.yml/dispatches HTTP/1.1
 Accept: application/vnd.github.v3+json
 content-type: application/json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 {"ref":"SODEV-34573"}
 
@@ -18,66 +18,60 @@ Authorization: token {{$processEnv NPM_TOKEN}}
 
 GET https://api.github.com/repos/buildcom/react-build-store/events HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 GET https://api.github.com/repos/buildcom/react-build-store/events HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/react-build-store/hooks HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/apps/balrogql-bot HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
-
-###
-
-GET https://api.github.com/repos/buildcom/react-build-store/pulls/4899 HTTP/1.1
-Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/react-build-store/pulls/4685/reviews HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/react-build-store/pulls/4685/reviews/1365464982/comments HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/product-services/pulls/207 HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/product-services/pulls/207/commits HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/product-services/events HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 POST https://api.github.com/repos/buildcom/react-build-store/statuses/4a7999290929b19836183403db65199d2bad58f6 HTTP/1.1
 Accept: Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 {"state":"success"}
 
@@ -85,33 +79,33 @@ Authorization: token {{$processEnv NPM_TOKEN}}
 
 GET https://api.github.com/orgs/buildcom/settings/billing/actions HTTP/1.1
 Accept: Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/users/lisadean/settings/billing/actions HTTP/1.1
 Accept: Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/react-build-store/actions/runs/2105311595/timing HTTP/1.1
 Accept: Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 GET https://api.github.com/repos/buildcom/react-build-store/compare/e4fbea9421f1f0cfc7ef72d1cfcee54b89061457...ee58be0d5ed4b972451737e084aae64134c97cff HTTP/1.1
 Accept: application/vnd.github.v3+json
 content-type: application/json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
 
 GET https://api.github.com/repos/lisadean/coderoaster/events HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
 
@@ -187,6 +181,38 @@ query Features($featureNames: [String!]!, $path: String!) {
 
 GET https://api.github.com/repos/buildcom/react-build-store/events HTTP/1.1
 Accept: application/vnd.github.v3+json
-Authorization: token {{$processEnv NPM_TOKEN}}
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 
 ###
+
+GET https://api.github.com/repos/fergdigitalcommerce/bwf-web-store/events HTTP/1.1
+Accept: application/vnd.github.v3+json
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
+
+###
+
+GET https://api.github.com/repos/fergdigitalcommerce/bwf-build-tachyons/pulls/131 HTTP/1.1
+Accept: application/vnd.github.v3+json
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
+
+###
+
+GET https://api.github.com/repos/fergdigitalcommerce/BWF-build-tachyons/events HTTP/1.1
+Accept: application/vnd.github.v3+json
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
+
+###
+
+GET https://api.github.com/orgs/fergdigitalcommerce/teams/bwf-react-developers HTTP/1.1
+Accept: application/vnd.github.v3+json
+Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
+X-GitHub-Api-Version: 2022-11-28
+
+###
+
+
+url -L \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR-TOKEN>" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  https://api.github.com/orgs/ORG/teams/TEAM_SLUG
