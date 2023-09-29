@@ -1,2 +1,3 @@
 .env
 .secrets
+src/.config/gh/hosts.yml
