@@ -8,6 +8,8 @@ alias crbs="code $CODE_DIR/bwf-web-store/."
 alias cdrbs="cd $CODE_DIR/bwf-web-store/"
 alias cfwp="code $CODE_DIR/bwf-web-platform/."
 alias cdfwp="cd $CODE_DIR/bwf-web-platform/"
+alias cnode="code $CODE_DIR/BWF-node-store/."
+alias cdnode="cd $CODE_DIR/BWF-node-store/"
 
 alias cdot="code $DOTFILES_DIR/."
 alias crbsold="code $CODE_DIR/react-build-store/."
