@@ -6,6 +6,7 @@ alias fuckingplease='sudo "$BASH" -c "$(history -p !!)"'
 
 alias crbs="code $CODE_DIR/bwf-web-store/."
 alias cdrbs="cd $CODE_DIR/bwf-web-store/"
+alias cdrbs2="cd $CODE_DIR/bwf-web-store2/"
 alias cfwp="code $CODE_DIR/bwf-web-platform/."
 alias cdfwp="cd $CODE_DIR/bwf-web-platform/"
 alias cnode="code $CODE_DIR/BWF-node-store/."

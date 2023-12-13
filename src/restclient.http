@@ -206,3 +206,97 @@ GET https://api.github.com/orgs/fergdigitalcommerce/teams/bwf-react-developers H
 Accept: application/vnd.github.v3+json
 Authorization: token {{$processEnv NPM_TOKEN_FERG_FULL}}
 X-GitHub-Api-Version: 2022-11-28
+
+###
+
+POST https://dy-api.com/v2/serve/user/choose
+content-type: application/json
+DY-API-Key: 8d6c13c2646ea0434cb0e719875d73e627f3a5e7cb246783d71a9f6eeb706673
+
+{
+	"user": {
+		"dyid": "7246291973907053879",
+		"dyid_server": "7246291973907053879"
+	},
+	"session": {
+		"dy": "1fb2z15p34n7ewqq0kxeua3drtktluke"
+	},
+	"selector": {
+		"names": [
+			"jfy-entry-main"
+		]
+	},
+	"context": {
+		"page": {
+			"type": "OTHER",
+			"data": [],
+			"location": "/"
+		},
+		"device": {
+			"userAgent": "node-fetch/1.0(+https: //github.com/bitinn/node-fetch)",
+			"ip": "38.102.37.20"
+		}
+	}
+}
+
+###
+
+POST https://dy-api.com/v2/serve/user/choose
+content-type: application/json
+DY-API-Key: 69b1cbea11e60d21ac70fad73464c888bda9a5d7b21877fbce2e4bd00d0a359c
+
+{
+	"user": {
+		"dyid": "-1306043654012369277",
+		"dyid_server": "-1306043654012369277"
+	},
+	"session": {
+		"dy": "p79ky3gi9y4f24rfx8coena6u1bh6ivl"
+	},
+	"selector": {
+		"names": [
+			"jfy-entry-sidebar"
+		]
+	},
+	"context": {
+		"page": {
+			"type": "OTHER",
+			"data": [],
+			"location": "/"
+		},
+		"device": {
+			"userAgent": "node-fetch/1.0(+https: //github.com/bitinn/node-fetch)",
+			"ip": "73.184.147.166"
+		}
+	},
+	"options": {
+		"returnAnalyticsMetadata": true,
+		"isImplicitPageview": false
+	}
+}
+
+###
+
+POST https://dy-api.com/v2/collect/user/engagement
+content-type: application/json
+DY-API-Key: 8d6c13c2646ea0434cb0e719875d73e627f3a5e7cb246783d71a9f6eeb706673
+
+{
+	"user": {
+		"dyid": "-1306043654012369277",
+		"dyid_server": "-1306043654012369277"
+	},
+	"session": {
+		"dy": "p79ky3gi9y4f24rfx8coena6u1bh6ivl"
+	},
+	"context": {
+		"device": {
+			"userAgent": "node-fetch/1.0(+https: //github.com/bitinn/node-fetch)",
+			"ip": "73.184.147.166"
+		}
+	},
+	"engagements": [{
+			"type": "CLICK",
+			"decisionId": "mbQtNjg5NDE0NDA2MDExOTA2NDAxMs4AGRm5qDEyNzk0MDY0AZCRzgGyALulNDUwNzXAwA=="
+	}]
+	}
