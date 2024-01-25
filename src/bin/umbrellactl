@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # from https://gist.github.com/jasmas/4976d359c00726cd3be1c9828aaddf31
 
-PLUGIN_BASE='/opt/cisco/anyconnect/bin/plugins'
+PLUGIN_BASE='/opt/cisco/secureclient/bin/plugins'
 
 read -r -d '' USAGE << EGASU
 Usage: `basename $0` [-s|-e|-d|-h]
