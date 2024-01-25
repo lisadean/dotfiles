@@ -300,3 +300,46 @@ DY-API-Key: 8d6c13c2646ea0434cb0e719875d73e627f3a5e7cb246783d71a9f6eeb706673
 			"decisionId": "mbQtNjg5NDE0NDA2MDExOTA2NDAxMs4AGRm5qDEyNzk0MDY0AZCRzgGyALulNDUwNzXAwA=="
 	}]
 	}
+
+###
+# just-for-you page with analytics
+
+POST https://dy-api.com/v2/serve/user/choose
+content-type: application/json
+# PROD
+# DY-API-Key: 69b1cbea11e60d21ac70fad73464c888bda9a5d7b21877fbce2e4bd00d0a359c
+# TEST
+DY-API-Key: 8d6c13c2646ea0434cb0e719875d73e627f3a5e7cb246783d71a9f6eeb706673
+
+
+{
+	"user": {
+		"dyid": "-1306043654012369277",
+		"dyid_server": "-1306043654012369277"
+	},
+	"session": {
+		"dy": "p79ky3gi9y4f24rfx8coena6u1bh6ivl"
+	},
+	"selector": {
+		"names": ["jfy-banner", "jfy-recommended-for-you", "jfy-pwrp"]
+	},
+	"context": {
+		"page": {
+			"type": "OTHER",
+			"data": [],
+			"location": "/just-for-you"
+		},
+		"device": {
+			"userAgent": "node-fetch/1.0(+https: //github.com/bitinn/node-fetch)",
+			"ip": "73.184.147.166"
+		}
+	},
+	"options": {
+		"returnAnalyticsMetadata": true,
+		"isImplicitPageview": false
+	}
+}
+
+
+
+
