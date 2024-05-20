@@ -340,6 +340,32 @@ DY-API-Key: 8d6c13c2646ea0434cb0e719875d73e627f3a5e7cb246783d71a9f6eeb706673
 	}
 }
 
+###
 
+POST http://bweb-npn-d-1.sys.ds.wolseley.com:8080/contents/items/scheduled/active/match/composite
+content-type: application/json
+DY-API-Key: 8d6c13c2646ea0434cb0e719875d73e627f3a5e7cb246783d71a9f6eeb706673
+
+{
+	"user": {
+		"dyid": "-1306043654012369277",
+		"dyid_server": "-1306043654012369277"
+	},
+	"session": {
+		"dy": "p79ky3gi9y4f24rfx8coena6u1bh6ivl"
+	},
+	"context": {
+		"device": {
+			"userAgent": "node-fetch/1.0(+https: //github.com/bitinn/node-fetch)",
+			"ip": "73.184.147.166"
+		}
+	},
+	"engagements": [{
+			"type": "CLICK",
+			"decisionId": "mbQtNjg5NDE0NDA2MDExOTA2NDAxMs4AGRm5qDEyNzk0MDY0AZCRzgGyALulNDUwNzXAwA=="
+	}]
+	}
+
+###
 
 
