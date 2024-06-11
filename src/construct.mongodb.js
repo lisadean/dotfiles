@@ -175,7 +175,7 @@ function findSavingsCenterLandingPages() {
         { 'content._type': /savings-center@/ },
         // landing pages
         { 'group.type': 'ROUTE' },
-        { 'group.identities.0.route': '/savings' },
+        // { 'group.identities.0.route': '/savings' },
 
         { 'group.identities.0.storeId': 248 },
         // { 'group.identities.0.route': '/lisatest' },
@@ -208,7 +208,7 @@ function findSavingsCenterLandingPages() {
     }
   });
 }
-// findSavingsCenterLandingPages();
+findSavingsCenterLandingPages();
 
 // find all landing pages for build and summarize by content type
 // use('core');
@@ -275,18 +275,18 @@ function listActiveLandingPageRoutesWithType() {
   });
 }
 
-db.getCollection('contentItemActive').aggregate([
-  {
-    $project: {
-      items: { $objectToArray: '$$ROOT' },
-    },
-  },
-  {
-    $unwind: '$items',
-  },
-  {
-    $match: {
-      'items.v': /savings-center@/, // Adjust the condition based on the actual value you're looking for
-    },
-  },
-]);
+// db.getCollection('contentItemActive').aggregate([
+//   {
+//     $project: {
+//       items: { $objectToArray: '$$ROOT' },
+//     },
+//   },
+//   {
+//     $unwind: '$items',
+//   },
+//   {
+//     $match: {
+//       'items.v': /savings-center@/, // Adjust the condition based on the actual value you're looking for
+//     },
+//   },
+// ]);
