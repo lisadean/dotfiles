@@ -1,0 +1,19 @@
+
+POST http://bweb-npn-d-1.sys.ds.wolseley.com:8080/contents/items/scheduled/active/match/composite?pricebookId=1&updateCache=false
+accept: */*
+Content-Type: application/json
+
+{
+    "group": {
+        "type": "ROUTE",
+        "identities": [
+            {
+                "type": "STORE_ROUTE",
+                "storeId": 248,
+                "route": "/lisa-sales"
+            }
+        ]
+    }
+}
+
+###

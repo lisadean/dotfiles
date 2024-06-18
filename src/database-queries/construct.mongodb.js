@@ -163,7 +163,7 @@ function me() {
 // );
 
 // Find all landing pages of the savings-center type for build
-function findSavingsCenterLandingPages() {
+function findRoutesOfContentType() {
   use('core');
   const items = db.contentItemActive.find(
     {
@@ -208,7 +208,7 @@ function findSavingsCenterLandingPages() {
     }
   });
 }
-findSavingsCenterLandingPages();
+findRoutesOfContentType();
 
 // find all landing pages for build and summarize by content type
 // use('core');
