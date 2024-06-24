@@ -10,7 +10,7 @@ Content-Type: application/json
             {
                 "type": "STORE_ROUTE",
                 "storeId": 248,
-                "route": "/lisa-sales"
+                "route": "/general-landing-test"
             }
         ]
     }

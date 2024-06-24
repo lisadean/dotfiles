@@ -234,7 +234,7 @@ findRoutesOfContentType();
 //   .sort({ count: -1 });
 
 // Find all landing pages of the savings-center type for build
-function listActiveLandingPageRoutesWithType() {
+function findAllActiveLandingPages() {
   use('core');
   const items = db.contentItemActive.find(
     {

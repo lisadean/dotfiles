@@ -19,16 +19,21 @@ function findRoutesOfContentType(contentType, active) {
     return new Date(date) > new Date();
   }
 
-  items.forEach((item) => {
-    if (active) {
-      if (isActive(item.schedule.to)) {
+  if (items.length <= 0) {
+    console.log('No items found');
+  } else {
+    items.forEach((item) => {
+      if (active) {
+        if (isActive(item.schedule.to)) {
+          console.log(item.group.identities[0].route);
+        }
+      } else {
         console.log(item.group.identities[0].route);
       }
-    } else {
-      console.log(item.group.identities[0].route);
-    }
-  });
+    });
+  }
 }
-findRoutesOfContentType('sitewide', true);
-console.log('---');
-findRoutesOfContentType('sitewide', false);
+// findRoutesOfContentType('sitewide', true);
+// console.log('---');
+// findRoutesOfContentType('sitewide', false);
+findRoutesOfContentType('general-landing', false);
