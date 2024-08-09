@@ -7,26 +7,40 @@ alias fuck='sudo $(history -p !!)'
 alias fuckingplease='sudo "$BASH" -c "$(history -p !!)"'
 
 alias crbs="code $CODE_DIR/bwf-web-store/."
-alias crbs2="code $CODE_DIR/bwf-web-store2/."
 alias cdrbs="cd $CODE_DIR/bwf-web-store/"
+
+alias crbs2="code $CODE_DIR/bwf-web-store2/."
 alias cdrbs2="cd $CODE_DIR/bwf-web-store2/"
+
 alias cfwp="code $CODE_DIR/bwf-web-platform/."
 alias cdfwp="cd $CODE_DIR/bwf-web-platform/"
+
+alias cfws="code $CODE_DIR/dc-ferg-store/."
+alias cdfws="cd $CODE_DIR/dc-ferg-store/"
+
+alias cfws="code $CODE_DIR/dc-ferguson-tachyons/."
+alias cdfws="cd $CODE_DIR/dc-ferguson-tachyons/"
+
 alias cnode="code $CODE_DIR/BWF-node-store/."
 alias cdnode="cd $CODE_DIR/BWF-node-store/"
 
 alias cdot="code $DOTFILES_DIR/."
-alias crbsold="code $CODE_DIR/react-build-store/."
-alias crbs2old="code $CODE_DIR/react-build-store-alt/."
-alias cnodeold="code $CODE_DIR/node-store/."
-alias cfwpold="code $CODE_DIR/fergy-web-platform/."
-alias crfsold="code $CODE_DIR/react-ferg-store/."
-
 alias cddot="cd $DOTFILES_DIR/"
+
+# Old repos
+alias crbsold="code $CODE_DIR/react-build-store/."
 alias cdrbsold="cd $CODE_DIR/react-build-store/"
+
+alias crbs2old="code $CODE_DIR/react-build-store-alt/."
 alias cdrbs2old="cd $CODE_DIR/react-build-store-alt/"
+
+alias cnodeold="code $CODE_DIR/node-store/."
 alias cdnodeold="cd $CODE_DIR/node-store/"
+
+alias cfwpold="code $CODE_DIR/fergy-web-platform/."
 alias cdfwpold="cd $CODE_DIR/fergy-web-platform/"
+
+alias crfsold="code $CODE_DIR/react-ferg-store/."
 alias cdrfsold="cd $CODE_DIR/react-ferg-store/"
 
 alias gbl="git branch --list"
