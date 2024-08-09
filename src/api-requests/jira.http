@@ -1,0 +1,23 @@
+# API reference: https://developer.atlassian.com/server/jira/platform/rest/v10000
+# REST Client reference: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+# https://developer.atlassian.com/server/jira/platform/
+# https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/
+
+@host = https://fergusonprod.atlassian.net
+# Web Plat
+@boardId = 1632
+@contentType = application/json
+@email = lisa.dean@supply.com
+
+
+### Get sprint names (first 50)
+GET {{host}}/rest/agile/1.0/board/{{boardId}}/sprint
+Accept: {{contentType}}
+Authorization: Basic {{email}} {{$processEnv JIRA_API_TOKEN}}
+
+### Get sprint names (next 50
+GET {{host}}/rest/agile/1.0/board/{{boardId}}/sprint
+    ?startAt=51
+Accept: {{contentType}}
+Authorization: Basic {{email}} {{$processEnv JIRA_API_TOKEN}}
+
