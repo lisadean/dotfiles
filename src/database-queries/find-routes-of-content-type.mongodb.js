@@ -36,4 +36,4 @@ function findRoutesOfContentType(contentType, active) {
 // findRoutesOfContentType('sitewide', true);
 // console.log('---');
 // findRoutesOfContentType('sitewide', false);
-findRoutesOfContentType('general-landing', false);
+findRoutesOfContentType('landing', false);

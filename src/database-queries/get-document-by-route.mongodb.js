@@ -38,12 +38,12 @@ function getDocumentByRoute(routeName, printDetail) {
   }
 }
 // getDocumentByRoute('general-landing-test', false);
-// getDocumentByRoute('savings', false);
+// getDocumentByRoute('electroluxtest', false);
 
 db.contentItemActive.find(
   {
     $and: [
-      { 'group.identities.0.route': /general-landing-test/ },
+      { 'group.identities.0.route': /electroluxtest/ },
       { 'group.identities.0.storeId': 248 },
     ],
   },

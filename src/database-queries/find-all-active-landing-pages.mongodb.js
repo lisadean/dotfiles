@@ -1,5 +1,5 @@
 use('core');
-function findAllActiveLandingPages(listType) {
+function findAllActiveLandingPages(listType, shortType) {
   const items = db.contentItemActive.find(
     {
       $and: [{ 'group.type': 'ROUTE' }, { 'group.identities.0.storeId': 248 }],
@@ -31,7 +31,11 @@ function findAllActiveLandingPages(listType) {
       if (isActive(item)) {
         if (listType) {
           console.log(
-            `${item.group.identities[0].route} ${item.content._type}`
+            `${item.group.identities[0].route},${
+              shortType
+                ? item.content._type.match(/^([^@]+)/)[0]
+                : item.content._type
+            }`
           );
         } else {
           console.log(item.group.identities[0].route);
@@ -40,4 +44,4 @@ function findAllActiveLandingPages(listType) {
     });
   }
 }
-findAllActiveLandingPages(false);
+findAllActiveLandingPages(true, true);
