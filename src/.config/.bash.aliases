@@ -1,3 +1,5 @@
+#!/bin/bash
+
 alias ll='ls -laGFT'
 alias llmod='ll -t'
 
