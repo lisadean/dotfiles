@@ -18,8 +18,8 @@ alias cdfwp="cd $CODE_DIR/bwf-web-platform/"
 alias cfws="code $CODE_DIR/dc-ferg-store/."
 alias cdfws="cd $CODE_DIR/dc-ferg-store/"
 
-alias cfws="code $CODE_DIR/dc-ferguson-tachyons/."
-alias cdfws="cd $CODE_DIR/dc-ferguson-tachyons/"
+alias cftach="code $CODE_DIR/dc-ferguson-tachyons/."
+alias cdftach="cd $CODE_DIR/dc-ferguson-tachyons/"
 
 alias cnode="code $CODE_DIR/BWF-node-store/."
 alias cdnode="cd $CODE_DIR/BWF-node-store/"
