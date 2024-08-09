@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # from https://gist.github.com/jasmas/4976d359c00726cd3be1c9828aaddf31
 
+# revision: https://gist.github.com/jasmas/4976d359c00726cd3be1c9828aaddf31/revisions
+
 PLUGIN_BASE='/opt/cisco/secureclient/bin/plugins'
 
 read -r -d '' USAGE << EGASU
