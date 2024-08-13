@@ -4,4 +4,4 @@ src/.config/gh/hosts.yml
 src/.config/configstore/update-notifier-npm.json
 src/.config/configstore/nodemon.json
 
-ConvertMarkDownTableToCSV.md
+misc/ConvertMarkDownTableToCSV.md
