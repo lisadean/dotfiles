@@ -8,3 +8,6 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # Pyenv
 export PATH="$PYENV_ROOT/bin:$PATH"
+
+# Docker CLI
+export PATH=$HOME/.docker/bin:$PATH
