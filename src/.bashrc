@@ -23,6 +23,9 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# direnv extension hook
+eval "$(direnv hook bash)"
+
 # Start z script
 # . /usr/local/etc/profile.d/z.sh
 # commented out because it seems to slow everything down
