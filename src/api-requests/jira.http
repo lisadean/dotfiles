@@ -6,6 +6,7 @@
 @host = https://fergusonprod.atlassian.net
 # Web Plat
 @boardId = 1632
+@sprintId = 10108
 @contentType = application/json
 @email = lisa.dean@supply.com
 
@@ -21,3 +22,7 @@ GET {{host}}/rest/agile/1.0/board/{{boardId}}/sprint
 Accept: {{contentType}}
 Authorization: Basic {{email}} {{$processEnv JIRA_API_TOKEN}}
 
+### Get sprint names (next 50
+GET {{host}}/rest/agile/1.0/sprint/{{sprintId}}
+Accept: {{contentType}}
+Authorization: Basic {{email}} {{$processEnv JIRA_API_TOKEN}}
