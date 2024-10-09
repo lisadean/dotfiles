@@ -1,0 +1,25 @@
+# API reference: https://developers.google.com/maps/documentation/places/web-service/reference/rest
+# https://developers.google.com/maps/documentation/places/web-service/text-search
+# REST Client reference: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+@host = https://places.googleapis.com
+@searchText = /v1/places:searchText
+@contentType = application/json
+@APIKEY = AIzaSyDpnZrWWdO49aEHSGBRSLXQ3O145CpW_34
+
+### Get location by text search
+# POST {{host}}{{searchText}}
+POST https://places.googleapis.com/v1/places:searchText
+Accept: {{contentType}}
+Referer: https://www.ferguson.com
+X-Goog-Api-Key: {{APIKEY}}
+X-Goog-FieldMask: *
+
+{
+  "textQuery": "30326",
+}
+
+### Old location API
+POST https://maps.googleapis.com/maps/api/place/textsearch/json?key=AIzaSyDbhz39yOjIhswKBnhqprLSHKG0Jp0u5BE
+Accept: {{contentType}}
+Referer: https://www.ferguson.com
