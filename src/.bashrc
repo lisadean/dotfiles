@@ -9,6 +9,7 @@ export CONFIG_DIR="$HOME/.config"
 
 [ -s "$DOTFILES_DIR"/.secrets ] && source "$DOTFILES_DIR"/.secrets
 # export GITHUB_TOKEN=${NPM_TOKEN}
+export NODE_AUTH_TOKEN=${NPM_TOKEN_FERG}
 source "$CONFIG_DIR"/.bash.paths
 source "$CONFIG_DIR"/.bash.aliases
 source "$CONFIG_DIR"/.bash.functions
